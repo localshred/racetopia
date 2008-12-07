@@ -17,7 +17,7 @@
 development:
   adapter: mysql
   encoding: utf8
-  database: spudoink_development
+  database: racetopia_development
   pool: 5
   username: root
   password:
@@ -29,7 +29,7 @@ development:
 test:
   adapter: mysql
   encoding: utf8
-  database: spudoink_test
+  database: racetopia_test
   pool: 5
   username: root
   password:
@@ -38,8 +38,8 @@ test:
 production:
   adapter: mysql
   encoding: utf8
-  database: spudoink_production
+  database: racetopia_production
   pool: 5
-  username: root
-  password: 
+  username: racetopia
+  password: speedracer
   socket: /tmp/mysql.sock
