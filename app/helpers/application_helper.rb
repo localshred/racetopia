@@ -54,5 +54,10 @@ module ApplicationHelper
 
     js.join("\n\t\t")
   end # def load_scripts
+  
+  # We only want to show google analytics if we're on production
+  def show_analytics?
+    ENV["RAILS_ENV"] == "production"
+  end # def show_analytics?
 
 end

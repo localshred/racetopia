@@ -1,12 +1,18 @@
-<?xml version="1.0" encoding="windows-1250"?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
 	<head>
-		<meta http-equiv="Content-type" content="text/html; charset=utf-8">
 		<title>Race Registration Software</title>
-		<meta name=”keywords” content=”race,management,software,online,registration,running,walking,cycling,fundraiser,fun run,cancer,diabetes”/>
-		<meta name=”description” content=”Are you hosting a race? Do you need a way for your participants to register online? Racetopia.com make hosting your own race a snap! Whether you are hosting a fundraiser for your cause or would just like to automate your race registration process, Racetopia.com gives you all the tools you need to run a smooth event from beginning to end!”/>
-		
+		<base href="http://www.racetopia.com/">
+		<meta http-equiv="content-type" content="text/html; charset=ISO-8859-1">
+		<meta name=”keywords” content=”race,management,software,online,registration,running,walking,cycling,fundraiser,fun run,cancer,diabetes”>
+		<meta name=”description” content=”Are you hosting a race? Do you need a way for your participants to register online? Racetopia.com make hosting your own race a snap! Whether you are hosting a fundraiser for your cause or would just like to automate your race registration process, Racetopia.com gives you all the tools you need to run a smooth event from beginning to end!”>
+		<meta name="robots" content="/robots.txt">
+		<meta name="author" content="#">
+		<meta name="copyright" content="#">
+		<meta name="language" content="en">
+	
+    <link rel="Shortcut Icon" href="/favicon.ico" type="image/x-icon">
+
 		<%= load_css controller %>
 		<%= load_scripts controller %>
 	</head>
@@ -35,5 +41,6 @@
 			
 		</div>
 
+		<%= if show_analytics? render :partial => "google_analytics" %>
 	</body>
 </html>
