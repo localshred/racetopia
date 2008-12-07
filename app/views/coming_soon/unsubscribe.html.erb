@@ -1,0 +1,12 @@
+<h4>Email Unsubscribe</h4>
+
+<p>Use the following form to unsubscribe your email address from our free periodic email updates. Enter your email address and click submit.</p>
+
+<%= form_tag(:url => { :action => "subscribe" }, :method => :put) %>
+	<div>
+		<%= text_field_tag(:email, params[:email], :class => "tip-text") %>
+		<%= submit_tag("SUBMIT", :id => "btn-submit") %>
+	</div>	
+</form>
+
+<p> or <%= link_to "Cancel", :action => "index" %></p>

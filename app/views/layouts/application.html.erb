@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="windows-1250"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+	<head>
+		<meta http-equiv="Content-type" content="text/html; charset=utf-8">
+		<title>Race Registration Software</title>
+		<meta name=”keywords” content=”race,management,software,online,registration,running,walking,cycling,fundraiser,fun run,cancer,diabetes”/>
+		<meta name=”description” content=”Are you hosting a race? Do you need a way for your participants to register online? Racetopia.com make hosting your own race a snap! Whether you are hosting a fundraiser for your cause or would just like to automate your race registration process, Racetopia.com gives you all the tools you need to run a smooth event from beginning to end!”/>
+		
+		<%= load_css controller %>
+		<%= load_scripts controller %>
+	</head>
+
+	<body id="<%= controller.controller_name %>">
+		
+		<div id="wrapper">
+			
+			<div id="header">
+				<h1 id="logo" title="racetopia.com"><a href="/" title="Home"><%= company_name %></a></h1>
+				<h4 id="tagline">Coming April 1, 2009</h4>
+			</div>
+			
+			<div id="content" class="cf">
+				<div id="guts">
+					<%= content_tag(:div, flash[:message], :class => "message") if flash[:message] -%>
+					<%= content_tag(:div, flash[:success], :class => "success") if flash[:success] -%>
+					<%= content_tag(:div, flash[:error], :class => "error") if flash[:error] -%>
+					<%= yield :layout -%>
+				</div>
+			</div>
+			
+			<div id="footer">
+				<p id="copyright">&copy; 2008 <%= company_name true %></p>
+			</div>
+			
+		</div>
+
+	</body>
+</html>

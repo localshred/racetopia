@@ -1,0 +1,28 @@
+<h4>Race Registration</h4>
+
+<p>Automate your race registration by allowing your racers to register online. <%= company_name %> specializes in race registration plus a number of other online tools to make managing your race a breeze.</p>
+
+<p>Are you doing a fundraiser for cancer or diabetes or some other cause? <%= company_name %> can help! We offer a completely automated system for managing specific parts of your race, plus we point you in the right direction to handle other race needs.</p>
+
+<p><%= company_name %> is for race directors that need automated registration for runs, walks, and cycling events. Experience Web 2.0 at it's best.</p>
+
+<h4>Features</h4>
+
+<ul>
+	<li>Online Participant Registration</li>
+	<li>Volunteer Management</li>
+	<li>Fundraising Tools: Thermometer to measure funds received.</li>
+	<li>Real-Time Reporting</li>
+	<li>Mass Emailing of Participants and Volunteers to keep them informed and excited!</li>
+</ul>
+
+<p>Enter your email and name below to be notified of developments and get a discount on your first race at <%= company_name %></p>
+
+<%= form_tag(:action => "subscribe") %>
+	<div>
+		<%= text_field_tag(:email, params[:email], :class => "tip-text") %>
+		<%= submit_tag("SUBMIT", :id => "btn-submit") %>
+	</div>	
+</form>
+
+<p>or <%= link_to "Unsubscribe", :action => "unsubscribe" %></p>

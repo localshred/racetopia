@@ -1,0 +1,161 @@
+/*
+	#aedfe5 - dark blue
+	#d5eef1 - lighter blue
+	#9c8679 - brown
+*/
+
+*
+{
+	padding: 0;
+	margin: 0;
+}
+
+body
+{
+	background: #aedfe5 url(/images/bg-thin-blue.jpg) repeat-y 50% 0;
+	color: #6d797b;
+	font-size: 16px;
+	line-height: 150%;
+	font-family: Helvetica, Tahoma, sans-serif;
+}
+
+a
+{
+	color: #666;
+	text-decoration: none;
+	border-bottom: 1px dotted #666;
+}
+
+a:hover,
+a:visited:hover
+{
+	border-bottom: none;
+}
+
+#wrapper
+{
+	margin: 0 auto;
+	width: 567px;
+	padding: 50px 20px;
+}
+
+#header
+{
+	text-align: center;
+}
+
+h1#logo
+{
+/*
+	text-indent: -5000px;
+	width: 319px;
+	height: 270px;
+	background: url(/images/racetopia-logo.jpg) no-repeat;
+*/
+	margin: 0 auto 20px;
+}
+
+h1#logo a
+{
+	text-decoration: none;
+	color: #666;
+	font-size: 40px;
+}
+
+h1#logo a span
+{
+	font-style: normal !important;
+}
+
+#tagline
+{
+	font: normal 18px;
+/*	color: #a0b3b5;*/
+	color: #f77;
+}
+
+#content
+{
+	padding: 20px;
+}
+
+#guts
+{
+	background: #fff;
+	padding: 20px;
+}
+
+#guts h4
+{
+	margin-bottom: 15px;
+	margin-left: -20px;
+	padding-left: 20px;
+	background: #666;
+	color: #fff;
+}
+
+#guts p,
+#guts ul
+{
+	margin: 5px 0 15px;
+}
+
+#guts ul
+{
+	margin-left: 25px;
+}
+
+#footer
+{
+	padding: 0 20px;
+	text-align: center;
+}
+
+#copyright
+{
+	font-size: 12px;
+	color: #a0b3b5;
+}
+
+span.company-name
+{
+	font-style: italic;
+	
+}
+
+input[type="text"].tip-text
+{
+	color: #aaa;
+	font-style: italic;
+}
+
+.error
+{
+	background: #FFD7D7;
+	border: 1px solid red;
+	color: red !important;
+	font-size: 12px;
+	padding: 4px;
+	margin-bottom: 10px;
+}
+
+.success,
+.message
+{
+	background: #CEFFCE;
+	color: green;
+	font-size: 12px;
+	border: 1px solid green;
+	padding: 4px;
+	margin-bottom: 10px;
+}
+
+.debug
+{
+	background: #FFD09A;
+	border: 1px solid #EB7300;
+	color: #000 !important;
+	font-size: 12px;
+	padding: 4px;
+	margin-bottom: 10px;
+}

@@ -1,0 +1,17 @@
+input[type="text"]
+{
+	font-size: 18px;
+	padding: 5px;
+	border: 2px solid #666;
+	width: 300px;
+}
+
+input[type="submit"]#btn-submit
+{
+	background: #a3c930;
+	height: 38px;
+	width: 150px;
+	color: #fff;
+	border: none;
+	font-size: 17px;
+}
