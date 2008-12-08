@@ -83,6 +83,7 @@ h1#logo a span
 
 #guts
 {
+	color: #666;
 	background: #f1f0e4;
 	border: 1px solid #e6e5da;
 	padding: 50px 20px 20px;
@@ -130,6 +131,13 @@ input[type="text"].tip-text
 {
 	color: #aaa;
 	font-style: italic;
+}
+
+span.highlight
+{
+	background: #fff874;
+	color: #000;
+	padding: 3px;
 }
 
 .error
