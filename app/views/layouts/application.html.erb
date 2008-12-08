@@ -11,7 +11,7 @@
 		<meta name="copyright" content="#">
 		<meta name="language" content="en">
 	
-    <link rel="Shortcut Icon" href="/favicon.ico" type="image/x-icon">
+		<link rel="Shortcut Icon" href="/favicon.ico" type="image/x-icon">
 
 		<%= load_css controller %>
 		<%= load_scripts controller %>
@@ -41,6 +41,6 @@
 			
 		</div>
 
-		<%= if show_analytics? render :partial => "google_analytics" %>
+		<%= render :partial => "google_analytics" if show_analytics? -%>
 	</body>
 </html>
