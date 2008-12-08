@@ -10,10 +10,10 @@
 	margin: 0;
 }
 
-body
+html, body
 {
-	background: #aedfe5 url(/images/bg-thin-blue.jpg) repeat-y 50% 0;
-	color: #6d797b;
+	background: #fff;
+	color: #6d797b; 
 	font-size: 16px;
 	line-height: 150%;
 	font-family: Helvetica, Tahoma, sans-serif;
@@ -35,24 +35,27 @@ a:visited:hover
 #wrapper
 {
 	margin: 0 auto;
-	width: 567px;
-	padding: 50px 20px;
+	width: 585px;
+	padding: 20px 0;
 }
 
 #header
 {
+	position: relative;
 	text-align: center;
+	height: 120px;
+	padding-top: 40px;
 }
 
 h1#logo
 {
-/*
+	position: absolute;
+	bottom: -27px;
+	left: 45px;
 	text-indent: -5000px;
-	width: 319px;
-	height: 270px;
-	background: url(/images/racetopia-logo.jpg) no-repeat;
-*/
-	margin: 0 auto 20px;
+	width: 493px;
+	height: 87px;
+	background: url(/images/racetopia-logo.gif) no-repeat;
 }
 
 h1#logo a
@@ -76,13 +79,13 @@ h1#logo a span
 
 #content
 {
-	padding: 20px;
 }
 
 #guts
 {
-	background: #fff;
-	padding: 20px;
+	background: #f1f0e4;
+	border: 1px solid #e6e5da;
+	padding: 50px 20px 20px;
 }
 
 #guts h4
@@ -90,7 +93,7 @@ h1#logo a span
 	margin-bottom: 15px;
 	margin-left: -20px;
 	padding-left: 20px;
-	background: #666;
+	background: #9c8679;
 	color: #fff;
 }
 

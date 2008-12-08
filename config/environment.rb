@@ -55,7 +55,7 @@ Rails::Initializer.run do |config|
   # Make sure the secret is at least 30 characters and all random, 
   # no regular words or you'll be exposed to dictionary attacks.
   config.action_controller.session = {
-    :session_key => '_spudoink_session',
+    :session_key => '_racetopia_session',
     :secret      => '0c447290d4af9810868ebffbbec56e7dc7a456253bcda891e66315c1ff38c9d307d0215aa78e23ea11de97005b6a9957c3947ec0f2a0d398fd232548e58f3030'
   }
 
