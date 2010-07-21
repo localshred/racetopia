@@ -41,5 +41,5 @@ production:
   database: racetopia_production
   pool: 5
   username: racetopia
-  password: speedracer
+  password: 
   socket: /var/lib/mysql/mysql.sock

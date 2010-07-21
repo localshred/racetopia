@@ -55,9 +55,9 @@ module ApplicationHelper
     js.join("\n\t\t")
   end # def load_scripts
   
-  # We only want to show google analytics if we're on production
+  # We only want to include the google analytics snippet if we're on production
   def show_analytics?
-    ENV["RAILS_ENV"] == "production"
+    Rails.env.production?
   end # def show_analytics?
 
 end
